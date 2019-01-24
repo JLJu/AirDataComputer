@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ADSSBb0.1-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,111 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L SamacSys_Parts:AD7856ANZ IC1
-U 1 1 5C461AA8
-P 2450 1550
-F 0 "IC1" H 3250 1815 50  0000 C CNN
-F 1 "AD7856ANZ" H 3250 1724 50  0000 C CNN
-F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 3900 1650 50  0001 L CNN
-F 3 "https://eu.mouser.com/datasheet/2/609/AD7856-877508.pdf" H 3900 1550 50  0001 L CNN
-F 4 "AD7856ANZ, 14 bit ADC Differential, Serial, 24-Pin PDIP" H 3900 1450 50  0001 L CNN "Description"
-F 5 "5.33" H 3900 1350 50  0001 L CNN "Height"
-F 6 "584-AD7856ANZ" H 3900 1250 50  0001 L CNN "Mouser Part Number"
-F 7 "Analog Devices" H 3900 1150 50  0001 L CNN "Manufacturer_Name"
-F 8 "AD7856ANZ" H 3900 1050 50  0001 L CNN "Manufacturer_Part_Number"
-	1    2450 1550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C1
-U 1 1 5C4620DA
-P 4850 1000
-F 0 "C1" H 4941 1046 50  0000 L CNN
-F 1 "0.01e-6" H 4941 955 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 4850 1000 50  0001 C CNN
-F 3 "~" H 4850 1000 50  0001 C CNN
-	1    4850 1000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C2
-U 1 1 5C46215A
-P 4350 1000
-F 0 "C2" H 4441 1046 50  0000 L CNN
-F 1 "10e-6" H 4441 955 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 4350 1000 50  0001 C CNN
-F 3 "~" H 4350 1000 50  0001 C CNN
-	1    4350 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4850 900  4350 900 
-$Comp
-L power:GND #PWR0101
-U 1 1 5C46234A
-P 4850 1100
-F 0 "#PWR0101" H 4850 850 50  0001 C CNN
-F 1 "GND" H 4855 927 50  0000 C CNN
-F 2 "" H 4850 1100 50  0001 C CNN
-F 3 "" H 4850 1100 50  0001 C CNN
-	1    4850 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 5C462374
-P 4350 1100
-F 0 "#PWR0102" H 4350 850 50  0001 C CNN
-F 1 "GND" H 4355 927 50  0000 C CNN
-F 2 "" H 4350 1100 50  0001 C CNN
-F 3 "" H 4350 1100 50  0001 C CNN
-	1    4350 1100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C3
-U 1 1 5C462545
-P 1750 2200
-F 0 "C3" H 1841 2246 50  0000 L CNN
-F 1 "0.1e-6" H 1841 2155 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 1750 2200 50  0001 C CNN
-F 3 "~" H 1750 2200 50  0001 C CNN
-	1    1750 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0103
-U 1 1 5C4625EA
-P 1650 2200
-F 0 "#PWR0103" H 1650 1950 50  0001 C CNN
-F 1 "GND" H 1655 2027 50  0000 C CNN
-F 2 "" H 1650 2200 50  0001 C CNN
-F 3 "" H 1650 2200 50  0001 C CNN
-	1    1650 2200
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 5C462829
-P 1850 2050
-F 0 "R1" H 1909 2096 50  0000 L CNN
-F 1 "10" H 1909 2005 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" H 1850 2050 50  0001 C CNN
-F 3 "~" H 1850 2050 50  0001 C CNN
-	1    1850 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1850 1950 1850 900 
 Wire Wire Line
-	1850 900  4350 900 
-Connection ~ 4350 900 
-Wire Wire Line
 	2450 1950 1850 1950
-Connection ~ 1850 1950
-Wire Wire Line
-	1850 2200 1850 2150
 Wire Wire Line
 	4050 2150 4300 2150
 Wire Wire Line
@@ -126,142 +24,15 @@ Wire Wire Line
 Wire Wire Line
 	4300 3050 1850 3050
 Wire Wire Line
-	1850 3050 1850 2200
-Connection ~ 1850 2200
-$Comp
-L Device:CP1_Small C4
-U 1 1 5C4630EC
-P 1300 2800
-F 0 "C4" H 1391 2846 50  0000 L CNN
-F 1 "470e-9" H 1391 2755 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 1300 2800 50  0001 C CNN
-F 3 "~" H 1300 2800 50  0001 C CNN
-	1    1300 2800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C5
-U 1 1 5C463270
-P 800 2800
-F 0 "C5" H 891 2846 50  0000 L CNN
-F 1 "0.1e-6" H 891 2755 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 800 2800 50  0001 C CNN
-F 3 "~" H 800 2800 50  0001 C CNN
-	1    800  2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	2450 2150 2100 2150
 Wire Wire Line
 	2100 2150 2100 2700
 Wire Wire Line
-	2100 2700 1300 2700
-Wire Wire Line
-	1300 2700 800  2700
-Connection ~ 1300 2700
-$Comp
-L power:GND #PWR0104
-U 1 1 5C463586
-P 800 2900
-F 0 "#PWR0104" H 800 2650 50  0001 C CNN
-F 1 "GND" H 805 2727 50  0000 C CNN
-F 2 "" H 800 2900 50  0001 C CNN
-F 3 "" H 800 2900 50  0001 C CNN
-	1    800  2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0105
-U 1 1 5C4635D0
-P 1300 2900
-F 0 "#PWR0105" H 1300 2650 50  0001 C CNN
-F 1 "GND" H 1305 2727 50  0000 C CNN
-F 2 "" H 1300 2900 50  0001 C CNN
-F 3 "" H 1300 2900 50  0001 C CNN
-	1    1300 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1_Small C6
-U 1 1 5C4637E3
-P 2150 3350
-F 0 "C6" H 2241 3396 50  0000 L CNN
-F 1 "0.01e-6" H 2241 3305 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 2150 3350 50  0001 C CNN
-F 3 "~" H 2150 3350 50  0001 C CNN
-	1    2150 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0106
-U 1 1 5C4638A6
-P 2150 3450
-F 0 "#PWR0106" H 2150 3200 50  0001 C CNN
-F 1 "GND" H 2155 3277 50  0000 C CNN
-F 2 "" H 2150 3450 50  0001 C CNN
-F 3 "" H 2150 3450 50  0001 C CNN
-	1    2150 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	2150 3250 2150 2250
 Wire Wire Line
 	2150 2250 2450 2250
-$Comp
-L Device:CP1_Small C7
-U 1 1 5C463F39
-P 1250 1950
-F 0 "C7" H 1341 1996 50  0000 L CNN
-F 1 "0.1e-6" H 1341 1905 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 1250 1950 50  0001 C CNN
-F 3 "~" H 1250 1950 50  0001 C CNN
-	1    1250 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0107
-U 1 1 5C46404B
-P 1250 2050
-F 0 "#PWR0107" H 1250 1800 50  0001 C CNN
-F 1 "GND" H 1255 1877 50  0000 C CNN
-F 2 "" H 1250 2050 50  0001 C CNN
-F 3 "" H 1250 2050 50  0001 C CNN
-	1    1250 2050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2450 1850 1250 1850
-$Comp
-L Oscillator:MAX7375AXR405 U1
-U 1 1 5C4646E9
-P 4550 1750
-F 0 "U1" H 4320 1704 50  0000 R CNN
-F 1 "MAX7375AXR405" H 4320 1795 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 5650 1400 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX7375.pdf" H 4450 1750 50  0001 C CNN
-	1    4550 1750
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	4850 900  5300 900 
-Connection ~ 4850 900 
-Wire Wire Line
-	4050 1750 4150 1750
-Wire Wire Line
-	4550 2050 5300 2050
-Wire Wire Line
-	5300 2050 5300 900 
-$Comp
-L power:GND #PWR0108
-U 1 1 5C4650CE
-P 4950 1450
-F 0 "#PWR0108" H 4950 1200 50  0001 C CNN
-F 1 "GND" H 4955 1277 50  0000 C CNN
-F 2 "" H 4950 1450 50  0001 C CNN
-F 3 "" H 4950 1450 50  0001 C CNN
-	1    4950 1450
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR0109
 U 1 1 5C4656E0
@@ -301,8 +72,6 @@ Wire Wire Line
 Wire Wire Line
 	4550 2100 4550 3500
 Wire Wire Line
-	4150 1650 4150 1750
-Wire Wire Line
 	4650 3500 4650 2300
 Wire Wire Line
 	4650 2300 4200 2300
@@ -320,8 +89,6 @@ Wire Wire Line
 	4550 4150 4100 4150
 Wire Wire Line
 	4100 4150 4100 1850
-Wire Wire Line
-	4100 1850 4050 1850
 Text Label 4350 4150 0    50   ~ 0
 MOSI
 $Bitmap
@@ -10247,9 +10014,6 @@ Wire Wire Line
 	2250 1300 2100 1300
 Wire Wire Line
 	2100 1300 2100 1400
-Connection ~ 4150 1750
-Wire Wire Line
-	4150 1750 4150 2100
 $Comp
 L power:GND #PWR0111
 U 1 1 5C469ACF
@@ -10262,20 +10026,15 @@ F 3 "" H 5050 2150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 2150 4350 2150
-Wire Wire Line
 	4350 2150 4350 2050
 Wire Wire Line
 	4350 2050 4050 2050
-Wire Wire Line
-	5300 900  5900 900 
 Wire Wire Line
 	5900 900  5900 4150
 Wire Wire Line
 	5900 4150 4650 4150
 Wire Wire Line
 	4650 4150 4650 4000
-Connection ~ 5300 900 
 Text Label 4850 4150 0    50   ~ 0
 5V
 $Comp
@@ -13135,32 +12894,26 @@ Wire Wire Line
 Connection ~ 5900 4150
 Connection ~ 2550 6050
 Wire Wire Line
-	4550 1450 4950 1450
+	5050 2150 4350 2150
+Wire Wire Line
+	4150 1650 4150 2100
 $Comp
-L Device:CP1_Small C8
-U 1 1 5C4B984C
-P 5450 2200
-F 0 "C8" H 5541 2246 50  0000 L CNN
-F 1 "0.1e-6" H 5541 2155 50  0000 L CNN
-F 2 "Capacitor_Tantalum_SMD:CP_EIA-2012-12_Kemet-R_Pad1.30x1.05mm_HandSolder" H 5450 2200 50  0001 C CNN
-F 3 "~" H 5450 2200 50  0001 C CNN
-	1    5450 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5C4B9904
-P 5450 2300
-F 0 "#PWR01" H 5450 2050 50  0001 C CNN
-F 1 "GND" H 5455 2127 50  0000 C CNN
-F 2 "" H 5450 2300 50  0001 C CNN
-F 3 "" H 5450 2300 50  0001 C CNN
-	1    5450 2300
+L Connector_Generic:Conn_02x09_Counter_Clockwise J8
+U 1 1 5C4A383F
+P 3200 2150
+F 0 "J8" H 3250 2767 50  0000 C CNN
+F 1 "Conn_02x09_Counter_Clockwise" H 3250 2676 50  0000 C CNN
+F 2 "Connector_Molex:Molex_Picoflex_90325-0018_2x09_P1.27mm_Vertical" H 3200 2150 50  0001 C CNN
+F 3 "~" H 3200 2150 50  0001 C CNN
+	1    3200 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 2050 5450 2050
+	3500 1850 4100 1850
 Wire Wire Line
-	5450 2050 5450 2100
-Connection ~ 5300 2050
+	1850 900  5900 900 
+Wire Wire Line
+	1850 2150 1850 3050
+Wire Wire Line
+	800  2700 2100 2700
 $EndSCHEMATC
